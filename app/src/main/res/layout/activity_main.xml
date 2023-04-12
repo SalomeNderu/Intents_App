@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/sms_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="62dp"
+        android:text="Sms"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cam_btn"
+        app:layout_constraintEnd_toStartOf="@+id/email_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cam_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="51dp"
+        android:text="Camera"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mpesa_btn"
+        app:layout_constraintEnd_toStartOf="@+id/share_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sms_btn" />
+
+    <Button
+        android:id="@+id/mpesa_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="60dp"
+        android:text="Mpesa"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/web_btn"
+        app:layout_constraintEnd_toStartOf="@+id/call_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cam_btn" />
+
+    <Button
+        android:id="@+id/web_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="236dp"
+        android:text="Website"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/map_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mpesa_btn" />
+
+    <Button
+        android:id="@+id/email_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="71dp"
+        android:text="Email"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/share_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sms_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/share_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="50dp"
+        android:text="Share"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/call_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cam_btn"
+        app:layout_constraintTop_toBottomOf="@+id/email_btn" />
+
+    <Button
+        android:id="@+id/call_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="60dp"
+        android:text="Call"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/map_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mpesa_btn"
+        app:layout_constraintTop_toBottomOf="@+id/share_btn" />
+
+    <Button
+        android:id="@+id/map_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="230dp"
+        android:text="Map"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/web_btn"
+        app:layout_constraintTop_toBottomOf="@+id/call_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
